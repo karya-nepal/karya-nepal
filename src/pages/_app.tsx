@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       theme={{
         colorScheme: 'dark',
         colors: themeColors,
-        fontFamily: 'Poppins',
+        fontFamily: 'Greycliff CF',
         white: '#EFE7DC',
         breakpoints: {
           xs: 500,
