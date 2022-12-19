@@ -16,12 +16,17 @@ export const BackgroundText: React.FC<
         zIndex: -1,
       }}
     >
-      {[1, 2, 3, 4, 5].map((_, i) => (
+      {[1, 2, 3].map((_, i) => (
         <Text
           key={i}
           style={{
             opacity: `${opacity}%`,
           }}
+          sx={(theme) => ({
+            [theme.fn.smallerThan('md')]: {
+              fontSize: theme.fontSizes.lg,
+            },
+          })}
           {...props}
         >
           karya nepal

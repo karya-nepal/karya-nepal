@@ -23,6 +23,6 @@ export const themeColors: Record<string, Tuple<string, 10>> = {
     '#595959',
     '#404040',
     '#262626',
-    '#120b0d',
+    '#1F1F1F',
   ],
 }
