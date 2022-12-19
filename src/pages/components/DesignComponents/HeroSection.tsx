@@ -19,7 +19,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   content: {
-    maxWidth: 580,
+    maxWidth: 680,
     marginRight: theme.spacing.xl * 2,
 
     [theme.fn.smallerThan('md')]: {
@@ -73,15 +73,16 @@ export function HeroSection() {
       <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>
-            <span className={classes.highlight}>Reinventing</span> casual and{' '}
-            <br /> temporary staffing
+            <span className={classes.highlight}>Innovations</span> in work and
+            lifestyle to develop world <br /> as a global workplace.
+            {/* <br /> */}
           </Title>
-          <Space h='xl' />
+          <Space h='sm' />
           <Text color='dimmed' mt='md'>
-            We’re using technology to dramatically improve the way labour hire
-            works for businesses and workers.
+            Becoming the catalyst for employees and employers <br /> and give
+            new horizon to employment.
           </Text>
-          <Space h='xl' />
+          <Space h='sm' />
           <Group mt={30} spacing={50}>
             <Button color='gray.8' size='md' className={classes.control}>
               for worker

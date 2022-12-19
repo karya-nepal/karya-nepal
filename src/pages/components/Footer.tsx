@@ -146,7 +146,8 @@ export function Footer({ data }: FooterProps) {
             karya nepal
           </Text>
           <Text size='xs' color='dimmed' className={classes.description}>
-            Reinventing casual and temporary staffing.
+            Becoming the catalyst for employees and employers and give new
+            horizon to employment.
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>
