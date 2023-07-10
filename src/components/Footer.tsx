@@ -7,10 +7,14 @@ import {
 
 const useStyles = createStyles((theme) => ({
   footer: {
-    marginTop: 120,
     paddingTop: theme.spacing.xl * 2,
     paddingBottom: theme.spacing.xl * 2,
     backgroundColor: theme.colors.gray[8],
+    width: '80%',
+    margin: 'auto',
+    marginTop: 120,
+    borderTopRightRadius: 40,
+    borderTopLeftRadius: 40,
   },
 
   logo: {
@@ -78,6 +82,11 @@ const useStyles = createStyles((theme) => ({
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
   },
 
+  highlight: {
+    position: 'relative',
+    color: theme.fn.gradient({ from: '#003893', to: '#DC143C' }),
+  },
+
   afterFooter: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -137,13 +146,8 @@ export function Footer({ data }: FooterProps) {
       <Container className={classes.inner}>
         <div className={classes.logo}>
           {/* <MantineLogo size={30} /> */}
-          <Text
-            variant='gradient'
-            gradient={{ from: 'blue', to: 'red' }}
-            weight={900}
-            size={30}
-          >
-            karya nepal
+          <Text weight={900} size={30}>
+            karya <span className={classes.highlight}>nepal</span>
           </Text>
           <Text size='xs' color='dimmed' className={classes.description}>
             Becoming the catalyst for employees and employers and give new
@@ -154,7 +158,7 @@ export function Footer({ data }: FooterProps) {
       </Container>
       <Container className={classes.afterFooter}>
         <Text color='dimmed' size='sm'>
-          © 2022 Karya Nepal. All rights reserved.
+          © 2023 Karya Nepal. All rights reserved.
         </Text>
 
         <Group spacing={0} className={classes.social} position='right' noWrap>

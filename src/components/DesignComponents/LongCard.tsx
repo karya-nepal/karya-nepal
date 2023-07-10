@@ -1,18 +1,21 @@
-import { Box, Flex, Stack, Button, Space, Text } from '@mantine/core'
+import { Box, BoxProps } from '@mantine/core'
+import { MutableRefObject } from 'react'
 
 export interface LongCardProps {
   children: React.ReactNode
   height: string | number
+  width?: string | number
 }
 
-export function LongCard(props: LongCardProps) {
+export function LongCard(props: LongCardProps & BoxProps) {
   return (
-    <Box sx={{ widht: 'auto', height: 'auto' }}>
+    <Box sx={{ width: 'auto', height: 'auto' }}>
       <Box
+        {...props}
         sx={(theme) => ({
           backgroundColor: theme.colors.gray[9],
           height: props.height,
-          width: '80%',
+          width: props.width || '80%',
           margin: '0 auto',
           marginTop: 40,
           borderRadius: 40,

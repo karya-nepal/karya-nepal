@@ -1,6 +1,6 @@
 import { createGetInitialProps } from '@mantine/next'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
-import { Fonts } from './theme/Fonts'
+import { Fonts } from '../theme/Fonts'
 
 const getInitialProps = createGetInitialProps()
 
@@ -15,7 +15,7 @@ export default class _Document extends Document {
 
           <Fonts />
         </Head>
-        <body>
+        <body style={{ margin: 0 }}>
           <Main />
           <NextScript />
         </body>

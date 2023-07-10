@@ -84,7 +84,7 @@ export function HeroSection() {
           </Text>
           <Space h='sm' />
           <Group mt={30} spacing={50}>
-            <Button color='gray.8' size='md' className={classes.control}>
+            <Button color='accent' size='md' className={classes.control}>
               for worker
             </Button>
             <Button size='md' color='gray.8' className={classes.control}>

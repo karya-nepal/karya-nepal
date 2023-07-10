@@ -25,4 +25,16 @@ export const themeColors: Record<string, Tuple<string, 10>> = {
     '#262626',
     '#1F1F1F',
   ],
+  'emerald-green': [
+    '#2e5e4e',
+    '#436d5e',
+    '#577c6e',
+    '#6b8c7f',
+    '#7f9b90',
+    '#94aba2',
+    '#a8bcb4',
+    '#beccc6',
+    '#d3ddd9',
+    '#e9eeec',
+  ],
 }

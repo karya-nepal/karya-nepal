@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import { MantineProvider } from '@mantine/core'
-import { themeColors } from './theme/colors'
-import { ButtonTheme } from './theme/ButtonTheme'
+import { themeColors } from '../theme/colors'
+import { ButtonTheme } from '../theme/ButtonTheme'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -9,6 +9,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       theme={{
         colorScheme: 'dark',
         colors: themeColors,
+        primaryColor: 'emerald-green',
+        primaryShade: 0,
         fontFamily: 'Greycliff CF',
         white: '#EFE7DC',
         breakpoints: {
