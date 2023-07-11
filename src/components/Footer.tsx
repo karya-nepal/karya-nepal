@@ -147,7 +147,7 @@ export function Footer({ data }: FooterProps) {
         <div className={classes.logo}>
           {/* <MantineLogo size={30} /> */}
           <Text weight={900} size={30}>
-            karya <span className={classes.highlight}>nepal</span>
+            Karya Nepal
           </Text>
           <Text size='xs' color='dimmed' className={classes.description}>
             Becoming the catalyst for employees and employers and give new
@@ -176,3 +176,35 @@ export function Footer({ data }: FooterProps) {
     </footer>
   )
 }
+
+export const FooterWrapper = () => (
+  <Footer
+    data={[
+      {
+        title: 'About',
+        links: [
+          { label: 'Our services', link: '' },
+          { label: 'About karya', link: '' },
+          { label: 'Privacy Policy', link: '' },
+          { label: 'Terms of use', link: '' },
+        ],
+      },
+
+      {
+        title: 'Community',
+        links: [
+          { label: 'Join Discord', link: '' },
+          { label: 'Follow on Twitter', link: '' },
+          { label: 'Email newsletter', link: '' },
+        ],
+      },
+      {
+        title: 'Other',
+        links: [
+          { label: 'Blog', link: '' },
+          { label: 'Careers', link: '' },
+        ],
+      },
+    ]}
+  />
+)

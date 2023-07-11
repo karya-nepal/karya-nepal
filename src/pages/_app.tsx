@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         colorScheme: 'dark',
         colors: themeColors,
         primaryColor: 'emerald-green',
-        primaryShade: 0,
+        primaryShade: 4,
         fontFamily: 'Greycliff CF',
         white: '#EFE7DC',
         breakpoints: {

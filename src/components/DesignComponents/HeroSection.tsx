@@ -49,7 +49,7 @@ const useStyles = createStyles((theme) => ({
   highlight: {
     position: 'relative',
     backgroundColor: theme.fn.variant({
-      variant: 'light',
+      variant: 'filled',
       color: theme.primaryColor,
     }).background,
     borderRadius: theme.radius.sm,
@@ -75,7 +75,6 @@ export function HeroSection() {
           <Title className={classes.title}>
             <span className={classes.highlight}>Innovations</span> in work and
             lifestyle to develop world <br /> as a global workplace.
-            {/* <br /> */}
           </Title>
           <Space h='sm' />
           <Text color='dimmed' mt='md'>
